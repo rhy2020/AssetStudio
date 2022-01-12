@@ -71,7 +71,9 @@ First, use my another program [Il2CppDumper](https://github.com/Perfare/Il2CppDu
 
 * Visual Studio 2022 or newer
 * **AssetStudioFBXNative** uses [FBX SDK 2020.2.1](https://www.autodesk.com/developer-network/platform-technologies/fbx-sdk-2020-2-1), before building, you need to install the FBX SDK and modify the project file, change include directory and library directory to point to the FBX SDK directory
+## Change 2022-01-12 17:31:36
 
+* ![](./img/20220112173233.jpg)
 ## Open source libraries used
 
 ### Texture2DDecoder
