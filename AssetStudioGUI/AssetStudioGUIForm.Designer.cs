@@ -126,6 +126,7 @@
             this.exportAnimatorwithselectedAnimationClipMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.goToSceneHierarchyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.showOriginalFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.columnHeaderABFileName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -263,7 +264,6 @@
             // 
             // specifyUnityVersion
             // 
-            this.specifyUnityVersion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.specifyUnityVersion.Name = "specifyUnityVersion";
             this.specifyUnityVersion.Size = new System.Drawing.Size(100, 23);
             // 
@@ -616,7 +616,8 @@
             this.columnHeaderContainer,
             this.columnHeaderType,
             this.columnHeaderPathID,
-            this.columnHeaderSize});
+            this.columnHeaderSize,
+            this.columnHeaderABFileName});
             this.assetListView.Dock = System.Windows.Forms.DockStyle.Fill;
             this.assetListView.FullRowSelect = true;
             this.assetListView.GridLines = true;
@@ -636,7 +637,7 @@
             // columnHeaderName
             // 
             this.columnHeaderName.Text = "Name";
-            this.columnHeaderName.Width = 170;
+            this.columnHeaderName.Width = 122;
             // 
             // columnHeaderContainer
             // 
@@ -1063,6 +1064,10 @@
             this.showOriginalFileToolStripMenuItem.Visible = false;
             this.showOriginalFileToolStripMenuItem.Click += new System.EventHandler(this.showOriginalFileToolStripMenuItem_Click);
             // 
+            // columnHeaderABFileName
+            // 
+            this.columnHeaderABFileName.Text = "ABFileName";
+            // 
             // AssetStudioGUIForm
             // 
             this.AllowDrop = true;
@@ -1209,6 +1214,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem14;
         private System.Windows.Forms.ToolStripTextBox specifyUnityVersion;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem15;
+        private System.Windows.Forms.ColumnHeader columnHeaderABFileName;
     }
 }
 

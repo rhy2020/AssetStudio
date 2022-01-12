@@ -15,11 +15,13 @@ namespace AssetStudioGUI
         public string InfoText;
         public string UniqueID;
         public GameObjectTreeNode TreeNode;
+        public string ABFileName;
 
         public AssetItem(Object asset)
         {
             Asset = asset;
             SourceFile = asset.assetsFile;
+            ABFileName = SourceFile.originalPath.Substring(SourceFile.originalPath.LastIndexOf("\\") + 1);
             Type = asset.type;
             TypeString = Type.ToString();
             m_PathID = asset.m_PathID;
@@ -34,6 +36,7 @@ namespace AssetStudioGUI
                 TypeString, //Type
                 m_PathID.ToString(), //PathID
                 FullSize.ToString(), //Size
+                ABFileName, //Belong Target AssetBundle File
             });
         }
     }
